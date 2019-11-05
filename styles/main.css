@@ -1,7 +1,7 @@
 .header {
   height: 848px;
-  background: linear-gradient(110deg, #56ccf2 75%, #fff 75%);
-  padding: 48px 227px;
+  background: linear-gradient(120deg, #56ccf2 72%, #fff 72%);
+  padding: 48px 15%;
   color: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -18,10 +18,16 @@
     color: #253757;
     background-color: #fff; }
 
+@media (max-width: 1250px) {
+  .header {
+    padding: 50px 11%;
+    height: 950px; } }
+
 @media (max-width: 1000px) {
   .header {
-    padding: 50px;
-    background: linear-gradient(130deg, #56ccf2 90%, #fff 90%); } }
+    padding: 50px 10%;
+    background: linear-gradient(130deg, #56ccf2 90%, #fff 90%);
+    height: 1200px; } }
 
 body,
 p,
@@ -40,9 +46,11 @@ a {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .nav :last-child {
-    margin-left: 135px; }
+    margin-left: 120px; }
   .nav :last-child::after {
     content: "";
     width: calc(100% + 10px);
@@ -55,11 +63,11 @@ a {
   .nav__logo {
     font-weight: bold;
     font-size: 32px;
-    margin-right: 80px; }
+    margin-right: 70px; }
   .nav__items {
     text-transform: none;
     color: #fff;
-    margin-left: 63px;
+    margin-left: 55px;
     position: relative; }
     .nav__items:hover::after {
       content: "";
@@ -70,6 +78,12 @@ a {
       position: absolute;
       bottom: -10px;
       left: -5px; }
+
+@media (max-width: 1150px) {
+  .nav :last-child {
+    margin: 10px; }
+  .nav__items, .nav__logo {
+    margin: 0 25px; } }
 
 @media (max-width: 1000px) {
   .nav {
@@ -91,7 +105,7 @@ a {
   font-weight: bold; }
 
 .section {
-  padding: 0 227px; }
+  padding: 0 15%; }
   .section__slider {
     height: 320px; }
   .section__welcome {
@@ -116,6 +130,11 @@ a {
     display: grid;
     grid-template-columns: 362px 600px;
     grid-gap: 187px; }
+    @media (max-width: 1250px) {
+      .section__process {
+        grid-template-columns: repeat(auto-fill, 600px);
+        grid-gap: 50px;
+        margin: 122px 0 0; } }
 
 .slider {
   width: 100%;
@@ -209,7 +228,7 @@ a {
 
 .what-we-do {
   display: grid;
-  grid-template-columns: repeat(3, 265px);
+  grid-template-columns: repeat(auto-fill, 265px);
   grid-gap: 128px; }
   .what-we-do__cards__image {
     width: 160px;
