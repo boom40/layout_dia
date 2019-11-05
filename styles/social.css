@@ -1,4 +1,4 @@
-.social {
+.socials {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   display: -webkit-box;
@@ -12,16 +12,16 @@
   margin: 0;
   padding: 0;
   width: 540px; }
-  .social__link {
+  .socials__link {
     list-style-type: none;
     text-transform: uppercase; }
-    .social__link > a {
+    .socials__link > a {
       font-weight: 800;
       font-size: 13px;
       color: #253757;
       -webkit-transition: 0.5s;
       transition: 0.5s; }
-    .social__link > a:hover {
+    .socials__link > a:hover {
       color: #56ccf2; }
 
 /*# sourceMappingURL=social.css.map */
